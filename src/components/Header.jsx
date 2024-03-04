@@ -4,7 +4,7 @@ import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
 import { brainwave } from "../assets";
 import MenuSvg from "../assets/svg/MenuSvg";
-import { navigation } from "../constants";
+import { navigation } from "../constants/index";
 import { HamburgerMenu } from "./design/Header";
 import Button from "../components/Button";
 
@@ -14,6 +14,7 @@ function Header() {
 
   const toggleNavigation = () => {
     if (openNavigation) {
+      setOpenNavigation(false);
       enablePageScroll();
     } else {
       setOpenNavigation(true);
@@ -74,7 +75,7 @@ function Header() {
         <Button
           className="ml-auto lg:hidden"
           px="px-3"
-          onClick={() => toggleNavigation}
+          onClick={toggleNavigation}
         >
           <MenuSvg openNavigation={openNavigation} />
         </Button>
