@@ -1,6 +1,6 @@
 import brackets from "../assets/svg/Brackets";
 
-function Tagline({ className, children }) {
+export function Tagline({ className, children }) {
   return (
     <div className={`tagline flex items-center ${className || ""}`}>
       {brackets("left")}
@@ -9,5 +9,3 @@ function Tagline({ className, children }) {
     </div>
   );
 }
-
-export default Tagline;
