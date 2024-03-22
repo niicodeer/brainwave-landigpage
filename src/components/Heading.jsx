@@ -1,4 +1,4 @@
-import Tagline from "./Tagline";
+import { Tagline } from "./Taglinee";
 
 function Heading({ className, title, text, tag }) {
   return (

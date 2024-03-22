@@ -3,7 +3,8 @@ import { roadmap } from "../constants";
 import Button from "./Button";
 import Heading from "./Heading";
 import Section from "./Section";
-import Tagline from "./Tagline";
+import { Tagline } from "./Taglinee";
+
 import { Gradient } from "./design/Roadmap";
 
 function Roadmap() {
