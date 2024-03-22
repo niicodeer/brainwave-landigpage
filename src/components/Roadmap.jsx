@@ -3,7 +3,7 @@ import { roadmap } from "../constants";
 import Button from "./Button";
 import Heading from "./Heading";
 import Section from "./Section";
-import Tagline from "./Tagline";
+/* import Tagline from "./Tagline"; */
 import { Gradient } from "./design/Roadmap";
 
 function Roadmap() {
@@ -33,7 +33,7 @@ function Roadmap() {
                   </div>
                   <div className="relative z-1">
                     <div className="flex items-center  justify-between max-w-[27rem] mb-8 md:mb-20">
-                      <Tagline>{item.date}</Tagline>
+                      {/* <Tagline>{item.date}</Tagline> */}
                       <div className="flex items-center px-4 py-1 bg-n-1 rounded text-n-8 ">
                         <img
                           src={item.status === "done" ? check2 : loading1}
